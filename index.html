@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oficina de Automações - Coleção Completa de Workflows N8N</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af',
+                        accent: '#dc2626',
+                        dark: '#1f2937',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i data-feather="zap" class="text-primary"></i>
+                <span class="font-bold text-xl">Oficina de Automações</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#features" class="hover:text-primary">Recursos</a>
+                <a href="#benefits" class="hover:text-primary">Benefícios</a>
+                <a href="#testimonials" class="hover:text-primary">Depoimentos</a>
+                <a href="#faq" class="hover:text-primary">FAQ</a>
+            </div>
+            <a href="https://pay.kirvano.com/bea3e3f0-c962-4a73-8f80-0d34c6883af0" class="bg-accent text-white px-4 py-2 rounded-md font-medium hover:bg-red-700 transition">COMPRE AGORA</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Oficina de Automações - Coleção Completa de Workflows N8N  📈</h1>
+                <p class="text-xl mb-8">Transforme seu negócio com nossa coleção exclusiva de automações prontas para usar.</p>
+                <div class="bg-white text-dark p-4 rounded-lg mb-6">
+                    <p class="text-lg font-bold text-accent">NÃO PERCA: DE R$ 497 POR R$ 29,90 - COMPRE AGORA!</p>
+                </div>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="https://pay.kirvano.com/bea3e3f0-c962-4a73-8f80-0d34c6883af0" class="bg-accent hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg text-center text-lg transition">COMPRE AGORA</a>
+                    <a href="#features" class="bg-white hover:bg-gray-100 text-primary font-bold py-4 px-8 rounded-lg text-center text-lg transition">SAIBA MAIS</a>
+                </div>
+            </div>
+            <div class="md:w-1/2" data-aos="fade-left">
+                <img src="http://static.photos/technology/1024x576/1" alt="Automações N8N" class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Overview -->
+    <section class="py-16 bg-gray-50" id="features">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">O Que Você Vai Receber</h2>
+                <p class="text-lg max-w-3xl mx-auto">Uma coleção completa de workflows N8N prontos para implementação imediata em seu negócio.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md feature-card transition" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-primary mb-4">
+                        <i data-feather="package" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">2,053 Workflows Prontos</h3>
+                    <p class="text-gray-600">Automações testadas e otimizadas para diversos cenários de negócios.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md feature-card transition" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-primary mb-4">
+                        <i data-feather="link" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">365 Integrações Únicas</h3>
+                    <p class="text-gray-600">Conecte-se com as principais plataformas e serviços do mercado.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md feature-card transition" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-primary mb-4">
+                        <i data-feather="book-open" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Documentação Inteligente</h3>
+                    <p class="text-gray-600">Sistema de busca e categorização para encontrar rapidamente o que precisa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Buy Section -->
+    <section class="py-16" id="benefits">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">Por Que Comprar?</h2>
+                <p class="text-lg max-w-3xl mx-auto">Veja como nossa coleção pode transformar seu negócio:</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div data-aos="fade-right">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4 text-primary">Benefícios Principais</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-green-500 mr-2 mt-1"></i>
+                                <span>Economize até 20 horas por semana com automações</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-green-500 mr-2 mt-1"></i>
+                                <span>Reduza custos operacionais em até 40%</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-green-500 mr-2 mt-1"></i>
+                                <span>Aumente a produtividade da equipe</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-green-500 mr-2 mt-1"></i>
+                                <span>Ganhe vantagem competitiva no mercado</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4 text-primary">Diferenciais Exclusivos</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="star" class="text-yellow-500 mr-2 mt-1"></i>
+                                <span>Coleção mais completa de workflows N8N</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="star" class="text-yellow-500 mr-2 mt-1"></i>
+                                <span>Sistema de documentação inteligente</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="star" class="text-yellow-500 mr-2 mt-1"></i>
+                                <span>Integrações com todas as principais plataformas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="star" class="text-yellow-500 mr-2 mt-1"></i>
+                                <span>Atualizações mensais com novos workflows</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">Números Impressionantes</h2>
+                <p class="text-lg max-w-3xl mx-auto">Nossa coleção em números:</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-4xl font-bold text-primary mb-2">2,053+</div>
+                    <div class="text-gray-600">Workflows Prontos</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-4xl font-bold text-primary mb-2">365</div>
+                    <div class="text-gray-600">Integrações Únicas</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-4xl font-bold text-primary mb-2">98%</div>
+                    <div class="text-gray-600">Tempo Economizado</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-4xl font-bold text-primary mb-2">1,200+</div>
+                    <div class="text-gray-600">Clientes Satisfeitos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Features -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">Recursos Técnicos</h2>
+                <p class="text-lg max-w-3xl mx-auto">Sistema avançado de documentação e integrações populares</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div data-aos="fade-right">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Documentação Inteligente</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i data-feather="search" class="text-primary mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold">Busca Completa</h4>
+                                <p class="text-gray-600">Encontre qualquer workflow em segundos com nosso sistema de busca avançado.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="layers" class="text-primary mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold">Categorização Inteligente</h4>
+                                <p class="text-gray-600">Workflows organizados por categoria, dificuldade e área de aplicação.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="smartphone" class="text-primary mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold">Interface Responsiva</h4>
+                                <p class="text-gray-600">Acesse a documentação de qualquer dispositivo, a qualquer momento.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="image" class="text-primary mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold">Diagramas Mermaid</h4>
+                                <p class="text-gray-600">Visualize o fluxo dos workflows com diagramas interativos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Principais Integrações</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                            <i data-feather="message-square" class="text-primary mr-3"></i>
+                            <span>Telegram</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                            <i data-feather="cpu" class="text-primary mr-3"></i>
+                            <span>OpenAI</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                            <i data-feather="shopping-cart" class="text-primary mr-3"></i>
+                            <span>Shopify</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                            <i data-feather="mail" class="text-primary mr-3"></i>
+                            <span>Gmail</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                            <i data-feather="dollar-sign" class="text-primary mr-3"></i>
+                            <span>Stripe</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                            <i data-feather="database" class="text-primary mr-3"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                            <i data-feather="cloud" class="text-primary mr-3"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                            <i data-feather="file-text" class="text-primary mr-3"></i>
+                            <span>Google Sheets</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">Casos de Uso</h2>
+                <p class="text-lg max-w-3xl mx-auto">Como diferentes profissionais podem se beneficiar:</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Empreendedores</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Automação de marketing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Gestão de leads</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Processamento de pedidos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Atendimento ao cliente</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Agências</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Onboarding de clientes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Relatórios automáticos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Gestão de projetos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Integração entre ferramentas</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Desenvolvedores</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Integração de APIs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Processamento de dados</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Automação de testes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Monitoramento de sistemas</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quantifiable Benefits -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">Benefícios Mensuráveis</h2>
+                <p class="text-lg max-w-3xl mx-auto">Veja o impacto que nossa coleção pode ter no seu negócio:</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div data-aos="fade-right">
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Economia de Tempo</span>
+                            <span class="font-bold text-primary">20h/semana</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-primary h-2.5 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Redução de Custos</span>
+                            <span class="font-bold text-primary">40%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-primary h-2.5 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Aumento de Produtividade</span>
+                            <span class="font-bold text-primary">3x</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-primary h-2.5 rounded-full" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <div class="bg-primary text-white p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4">ROI Esperado</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold mb-1">10x</div>
+                                <div class="text-sm">Retorno sobre Investimento</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold mb-1">R$2,500+</div>
+                                <div class="text-sm">Economia Mensal</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold mb-1">95%</div>
+                                <div class="text-sm">Redução de Erros</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold mb-1">4.9/5</div>
+                                <div class="text-sm">Satisfação do Cliente</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-50" id="testimonials">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">O Que Nossos Clientes Dizem</h2>
+                <p class="text-lg max-w-3xl mx-auto">Depoimentos de quem já usa nossa coleção:</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex mb-4">
+                        <div class="flex items-center text-yellow-400">
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Economizei mais de 15 horas por semana com as automações. A coleção é incrivelmente completa e bem documentada."</p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/200x200/1" alt="Cliente" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <div class="font-semibold">Carlos Silva</div>
+                            <div class="text-sm text-gray-500">CEO, TechSolutions</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex mb-4">
+                        <div class="flex items-center text-yellow-400">
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Implementei vários workflows em minha agência e os resultados foram imediatos. O suporte também é excelente!"</p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/200x200/2" alt="Cliente" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <div class="font-semibold">Ana Oliveira</div>
+                            <div class="text-sm text-gray-500">Diretora, MarketingPro</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex mb-4">
+                        <div class="flex items-center text-yellow-400">
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Como desenvolvedor, economizei centenas de horas usando esses workflows como base para meus projetos. Vale cada centavo!"</p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/200x200/3" alt="Cliente" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <div class="font-semibold">Ricardo Santos</div>
+                            <div class="text-sm text-gray-500">Desenvolvedor Sênior</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                <div class="md:flex">
+                    <div class="md:w-1/3 bg-primary text-white p-8 flex flex-col justify-center">
+                        <div class="text-center">
+                            <i data-feather="award" class="w-12 h-12 mx-auto mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">Garantia de 30 Dias</h3>
+                            <p>Se não estiver satisfeito, devolvemos seu dinheiro sem perguntas.</p>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <h3 class="text-xl font-bold mb-4 text-primary">Suporte Completo</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="flex items-start">
+                                <i data-feather="mail" class="text-primary mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold">Suporte por Email</h4>
+                                    <p class="text-gray-600">Respostas em até 24 horas úteis</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="message-square" class="text-primary mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold">Chat Online</h4>
+                                    <p class="text-gray-600">Atendimento rápido via chat</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="book" class="text-primary mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold">Documentação Detalhada</h4>
+                                    <p class="text-gray-600">Guia passo a passo para cada workflow</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="video" class="text-primary mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold">Tutoriais em Vídeo</h4>
+                                    <p class="text-gray-600">Demonstrações visuais de implementação</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing CTA -->
+    <section class="py-16 bg-primary text-white" id="pricing">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">NÃO PERCA ESTA OPORTUNIDADE!</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Adquira agora a coleção mais completa de workflows N8N por um preço especial por tempo limitado.
+            </p>
+            <div class="bg-white text-dark p-6 rounded-lg inline-block mb-8" data-aos="fade-up" data-aos-delay="200">
+                <p class="text-2xl font-bold">
+                    <span class="line-through text-gray-500 mr-2">R$ 497</span>
+                    <span class="text-accent">R$ 29,90</span>
+                </p>
+            </div>
+            <a href="https://pay.kirvano.com/bea3e3f0-c962-4a73-8f80-0d34c6883af0" class="bg-accent hover:bg-red-700 text-white font-bold py-4 px-12 rounded-lg text-center text-lg inline-block transition mb-4" data-aos="fade-up" data-aos-delay="300">PAGAR AGORA</a>
+            <p class="text-sm mt-4" data-aos="fade-up" data-aos-delay="400">
+                Pagamento seguro via cartão de crédito, Pix ou boleto bancário.
+            </p>
+        </div>
+    </section>
+
+    <!-- About Creator -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0" data-aos="fade-right">
+                    <img src="http://static.photos/people/320x240/4" alt="Criador" class="rounded-lg shadow-lg w-full max-w-xs mx-auto">
+                </div>
+                <div class="md:w-2/3 md:pl-12" data-aos="fade-left">
+                    <h2 class="text-3xl font-bold mb-4">Sobre o Criador</h2>
+                    <p class="text-lg mb-4">
+                        Com mais de 5 anos de experiência em automação e mais de 100 clientes satisfeitos, desenvolvi esta coleção para ajudar profissionais e empresas a alcançarem todo o potencial do N8N sem perder tempo criando workflows do zero.
+                    </p>
+                    <div class="flex items-center mb-4">
+                        <i data-feather="award" class="text-primary mr-2"></i>
+                        <span>Certificado N8N</span>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <i data-feather="briefcase" class="text-primary mr-2"></i>
+                        <span>100+ Clientes Satisfeitos</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i data-feather="clock" class="text-primary mr-2"></i>
+                        <span>5+ Anos de Experiência</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16" id="faq">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">Perguntas Frequentes</h2>
+                <p class="text-lg max-w-3xl mx-auto">Tire suas dúvidas sobre nossa coleção de workflows.</p>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <div class="mb-4 border-b" data-aos="fade-up">
+                    <button class="accordion-header flex justify-between items-center w-full py-4 text-left font-medium">
+                        <span>Preciso saber programar para usar esses workflows?</span>
+                        <i data-feather="chevron-down" class="accordion-icon transition-transform"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="pb-4 text-gray-600">
+                            Não! Todos os workflows foram projetados para serem usados sem conhecimento de programação. Nossa documentação detalhada explica passo a passo como implementar cada automação.
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 border-b" data-aos="fade-up">
+                    <button class="accordion-header flex justify-between items-center w-full py-4 text-left font-medium">
+                        <span>Os workflows são compatíveis com minha versão do N8N?</span>
+                        <i data-feather="chevron-down" class="accordion-icon transition-transform"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="pb-4 text-gray-600">
+                            Nossa coleção é compatível com as versões mais recentes do N8N. Todos os workflows são testados e atualizados regularmente para garantir compatibilidade. Caso tenha alguma dúvida específica sobre sua versão, entre em contato conosco.
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 border-b" data-aos="fade-up">
+                    <button class="accordion-header flex justify-between items-center w-full py-4 text-left font-medium">
+                        <span>Como recebo acesso após a compra?</span>
+                        <i data-feather="chevron-down" class="accordion-icon transition-transform"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="pb-4 text-gray-600">
+                            Imediatamente após a confirmação do pagamento, você receberá um email com instruções para acessar a área de membros, onde poderá baixar toda a coleção e acessar a documentação completa.
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 border-b" data-aos="fade-up">
+                    <button class="accordion-header flex justify-between items-center w-full py-4 text-left font-medium">
+                        <span>Há suporte disponível se eu tiver problemas?</span>
+                        <i data-feather="chevron-down" class="accordion-icon transition-transform"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="pb-4 text-gray-600">
+                            Sim! Oferecemos suporte por email e chat para ajudar com qualquer dúvida ou problema que você possa ter ao implementar os workflows. Além disso, nossa documentação abrangente cobre a maioria das questões comuns.
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 border-b" data-aos="fade-up">
+                    <button class="accordion-header flex justify-between items-center w-full py-4 text-left font-medium">
+                        <span>Posso usar esses workflows em vários projetos/clientes?</span>
+                        <i data-feather="chevron-down" class="accordion-icon transition-transform"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="pb-4 text-gray-600">
+                            Sim, nossa licença permite que você use os workflows em quantos projetos e clientes desejar. A única restrição é que você não pode redistribuir ou revender os workflows como se fossem seus.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">PRONTO PARA TRANSFORMAR SEU NEGÓCIO?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Adquira agora a coleção mais completa de workflows N8N e comece a economizar tempo hoje mesmo!
+            </p>
+            <div class="bg-white text-dark p-6 rounded-lg inline-block mb-8" data-aos="fade-up" data-aos-delay="200">
+                <p class="text-2xl font-bold">
+                    <span class="line-through text-gray-500 mr-2">R$ 497</span>
+                    <span class="text-accent">R$ 29,90</span>
+                </p>
+            </div>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="https://pay.kirvano.com/bea3e3f0-c962-4a73-8f80-0d34c6883af0" class="bg-accent hover:bg-red-700 text-white font-bold py-4 px-12 rounded-lg text-center text-lg transition" data-aos="fade-up" data-aos-delay="300">COMPRE AGORA</a>
+                <a href="#features" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-4 px-12 rounded-lg text-center text-lg transition" data-aos="fade-up" data-aos-delay="400">SAIBA MAIS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <i data-feather="zap" class="text-primary"></i>
+                        <span class="font-bold text-xl">Oficina de Automações</span>
+                    </div>
+                    <p class="text-gray-400 mt-2">© 2023 Todos os direitos reservados</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="facebook"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>Este produto não é afiliado ao N8N. N8N é uma marca registrada da N8N GmbH.</p>
+                <p class="mt-2"><a href="#" class="hover:text-white transition">Termos de Serviço</a> | <a href="#" class="hover:text-white transition">Política de Privacidade</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Initialize Feather Icons
+        feather.replace();
+
+        // Accordion functionality
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const icon = header.querySelector('.accordion-icon');
+                
+                if(content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
